@@ -1,0 +1,60 @@
+	/*External CSS, most common... CSS = Cascading Style Sheets */
+	/* just an exampels */
+
+body {
+  background-color: powderblue;
+}
+
+/* class name w3-codespan */
+.w3-codespan{ 
+  color: #0000ff; font-size:20px; font-weight: bold; 
+}
+
+/* id name p00 */
+#p00 {
+	color:black;
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: red;
+  text-align:center;
+}
+
+li {
+	font-size: 18px;
+}
+
+a {
+	text-align:center;
+}
+/* Link Styles for different status 
+	a:link {
+	  color: green;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+
+	a:visited {
+	  color: pink;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+
+	a:hover {
+	  color: red;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+
+	a:active {
+	  color: yellow;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+/*
+
+
