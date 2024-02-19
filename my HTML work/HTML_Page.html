@@ -1,62 +1,84 @@
 <!DOCTYPE html> <!-- defines that this document is an HTML5 document-->
-<html lang="en"> 
-	<head>
-		<title>myTestTap</title> 
-		 <!-- Define the character set used: -->
-		 <!-- Internal CSS Style -->
-		<style> 
-			body {background-color:#d8e3e4;}
-			h1 {color: black;}
-			table, th, td {
-				border: 1px solid black;
-				border-collapse: collapse;
-				padding: 5px;}
-			#head_table{width:100%;}
-			#head_table td { border-color:transparent;}
-		</style>
-		<!-- or we can use External CSS 
+<html lang="en">
+<head>
+	<title>myTestTap</title>
+	<!-- Define the character set used: -->
+	<!-- Internal CSS Style -->
+	<style>
+		body {
+			background-color: #d8e3e4;
+		}
+
+		h1 {
+			color: black;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+
+		#head_table {
+			width: 100%;
+		}
+
+		#head_table td {
+			border-color: transparent;
+		}
+	</style>
+	<!-- or we can use External CSS 
 			by file <link rel="stylesheet" href="myCSS.css">
 			by Link <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"> -->
-		
-		<!-- now Script is for JavaScript -->
-		<script>	
-			<!-- Problem with this function -Not Working- -->
-			function changeBackPic_Wit(){
-				var pic ="pics/white_pic_theme.jpg"; 
-				document.getElementById("backG_Pic").style.background-image.url=pic;
-		</script>
-			
-		<meta charset="UTF-8"/> 
-		 <!-- Define keywords for search engines: -->
-		<meta name="keywords" content="HTML, Test, MyTest"/>
-		 <!-- Define a description of your web page: -->
-		<meta name="description" content="My notePad for testing/learing HTML"/>
-		 <!-- Define the author of a page: -->
-		<meta name="author" content="Ramzi Sayegh"/>
-		 <!-- Refresh document every x seconds: -->
-		<!-- <meta http-equiv="refresh" content="3"/> -->
-		 <!-- Setting the viewport to make your website look good on all devices: -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		
-		<!-- <p> Paragraph in Head</p> ### no Paragraph in Head ### -->
+
+	<!-- now Script is for JavaScript -->
+	<script>
+		<!-- Problem with this function -Not Working- -->
+		function changeBackPic_Wit() {
+			var pic = "pics/white_pic_theme.jpg";
+			document.getElementById("backG_Pic").style.background - image.url==pic;
+		}
+	</script>
+
+	<meta charset="UTF-8" />
+	<!-- Define keywords for search engines: -->
+	<meta name="keywords" content="HTML, Test, MyTest" />
+	<!-- Define a description of your web page: -->
+	<meta name="description" content="My notePad for testing/learing HTML" />
+	<!-- Define the author of a page: -->
+	<meta name="author" content="Ramzi Sayegh" />
+	<!-- Refresh document every x seconds: -->
+	<!-- <meta http-equiv="refresh" content="3"/> -->
+	<!-- Setting the viewport to make your website look good on all devices: -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- <p> Paragraph in Head</p> ### no Paragraph in Head ### -->
 	</head>
-	
+
 	<!-- back ground Img Link:
 		https://www.w3schools.com/html/html_images_background.asp
 	-->
-	<body id="backG_Pic" style="background-image: url('https://designempath.com/wp-content/uploads/2018/02/background-pattern-fade.jpg');">
+
+	<body id="backG_Pic"
+		style="background-image: url('https://designempath.com/wp-content/uploads/2018/02/background-pattern-fade.jpg');">
 		<header>
 			<table id="head_table" style="border-color:red;">
-				<tr >
-					<td><h1> Body Start </h1></td>
-					<td style="text-align:right;">Background: <button type="button" onclick="changeBackPic_Wit()">white</button></td> 
-					<td><button>black</button></td> 
+				<tr>
+					<td>
+						<h1> Body Start </h1>
+					</td>
+					<td style="text-align:right;">Background: <button type="button"
+							onclick="changeBackPic_Wit()">white</button></td>
+					<td><button>black</button></td>
 				</tr>
 			</table>
-			<p style="font-size:18px;">&#160;&#160;<abbr title="Hyper Text Markup Language">HTML</abbr> exampels will be tested down below,<br>seperated with line:</p>
+			<p style="font-size:18px;">&#160;&#160;<abbr title="Hyper Text Markup Language">HTML</abbr> exampels will be
+				tested down below,<br>seperated with line:</p>
 			<!-- &#160; force space to be added -->
 			<!-- <abbr> tag defines an abbreviation or an acronym -->
-			
+
 			<details>
 				<summary> Parts in this Web:</summary>
 				<ol type="A">
@@ -75,105 +97,119 @@
 		margin-left: auto;
 		margin-right: auto;
 		border-style: inset;
-		border-width: 1px;" 
-		title = "Style Part">
-		
-		
+		border-width: 1px;" title="Style Part">
+
+
 		<!-- we should use Headings h2-h6 when using <article> or <section> -->
 		<section>
-			<h3 style="text-align:center;"><a id="p01" style="background-color:#c3d4d5" href="https://www.w3schools.com/html/html_styles.asp">
-				Style Link 
-			</a></h3>
+			<h3 style="text-align:center;"><a id="p01" style="background-color:#c3d4d5"
+					href="https://www.w3schools.com/html/html_styles.asp">
+					Style Link
+				</a></h3>
 			<article>
-				<h4>This Paragraph was made by Style attribute (Black background color + gold Text color + papyrus font-family).</h4>
-				<p style="background-color:black; color:gold; font-family:papyrus; margin: -20px auto 0px auto;">This <cite>Paragraph</cite> was made by Style attribute (Black background color + gold Text color + <q>papyrus</q> font-family).</p>
+				<h4>This Paragraph was made by Style attribute (Black background color + gold Text color + papyrus
+					font-family).</h4>
+				<p style="background-color:black; color:gold; font-family:papyrus; margin: -20px auto 0px auto;">This
+					<cite>Paragraph</cite> was made by Style attribute (Black background color + gold Text color +
+					<q>papyrus</q> font-family).</p>
 			</article>
-			
+
 			<article>
 				<h4 style="text-align:center"> Same but 200% font size + its Center Alignment </h4>
 				<!-- <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.) -->
-				<p style="background-color:black; color:gold; font-family:papyrus; font-size:200%; text-align:center; margin: -20px auto 0px auto;"> 
-				Same but 200% font size + its Center Alignment</p> 
+				<p
+					style="background-color:black; color:gold; font-family:papyrus; font-size:200%; text-align:center; margin: -20px auto 0px auto;">
+					Same but 200% font size + its Center Alignment</p>
 			</article>
 		</section>
-		
-		
-		
-		
-		<hr title = "Formatting Part">
+
+
+
+
+		<hr title="Formatting Part">
 		<section>
-			<h3 style="text-align:center;"><a id="p02" style="background-color:#c3d4d5;" href="https://www.w3schools.com/html/html_formatting.asp">
-				Formatting Link 
-			</a></h3>
-		
-		
+			<h3 style="text-align:center;"><a id="p02" style="background-color:#c3d4d5;"
+					href="https://www.w3schools.com/html/html_formatting.asp">
+					Formatting Link
+				</a></h3>
+
+
 			<table style="border-collapse: collapse; width: 100%;">
 				<caption>The below Table, for Formatting Elements and an example of each</caption>
-					<tr >
-						<td style="font-size:150%; text-align:center"> <ins><b>Example</b></ins> </td>
-						<td style="font-size:150%; text-align:center"> <ins><b>Formatting Elements</b></ins> </td>
-					</tr>
-					<tr style="text-align:center;">
-						<td> <p>This text is normal.</p>
-				<p><b>This text is bold.</b></p>
-				<p><em>This text is emphasized</em> --- defines emphasized text ---</p>
-				<p><i>This text is italic</i> --- defines a part of text in an alternate voice or mood ---</p>
-				<p><small>This is some smaller text.</small></p>
-				<p><strong>This text is important!</strong></p> 
-				<p>This is <sub>subscripted</sub> and <sup>superscripted</sup> text.</p>
-				<p>My favorite color is <del>blue</del> <ins>red</ins></p>
-				<p>Do not forget to buy <mark>milk</mark> today --- defines text that should be marked or highlighted ---</p>
-				 </td>
-						<td> <img src="pics/Format%20Table.png" alt="Format Table Pic" width="700" height="400"> </td>
-					</tr>
+				<tr>
+					<td style="font-size:150%; text-align:center"> <ins><b>Example</b></ins> </td>
+					<td style="font-size:150%; text-align:center"> <ins><b>Formatting Elements</b></ins> </td>
+				</tr>
+				<tr style="text-align:center;">
+					<td>
+						<p>This text is normal.</p>
+						<p><b>This text is bold.</b></p>
+						<p><em>This text is emphasized</em> --- defines emphasized text ---</p>
+						<p><i>This text is italic</i> --- defines a part of text in an alternate voice or mood ---</p>
+						<p><small>This is some smaller text.</small></p>
+						<p><strong>This text is important!</strong></p>
+						<p>This is <sub>subscripted</sub> and <sup>superscripted</sup> text.</p>
+						<p>My favorite color is <del>blue</del> <ins>red</ins></p>
+						<p>Do not forget to buy <mark>milk</mark> today --- defines text that should be marked or
+							highlighted ---</p>
+					</td>
+					<td> <img src="pics/Format%20Table.png" alt="Format Table Pic" width="700" height="400"> </td>
+				</tr>
 			</table>
 		</section>
 		<hr>
-		
-		
+
+
 		<div>
-			<a href="https://www.w3schools.com/html/html_images.asp"><p id="p03" style="text-align:center; background-color:#c3d4d5;">IMG Map</p></a>
+			<a href="https://www.w3schools.com/html/html_images.asp">
+				<p id="p03" style="text-align:center; background-color:#c3d4d5;">IMG Map</p>
+			</a>
 			<!-- margin: top right bottom left; -->
-			<img style="float: right; margin:50px 75px 50px 25px;" src="pics/workplace.jpg" alt="Workplace" usemap="#workmap">
-			
+			<img style="float: right; margin:50px 75px 50px 25px;" src="pics/workplace.jpg" alt="Workplace"
+				usemap="#workmap">
+
 			<figure style="margin:50px 25px 50px 75px;">
 				<img src="pics/MapImg.png" alt="MapImg_Code">
 				<figcaption>Fig.1 - IMG-Map Code</figcaption>
 			</figure>
-			
+
 			<map name="workmap">
-				<area shape="rect" coords="34,44,270,350" alt="Computer" href="https://denvermacrepair.com/wp-content/uploads/2017/03/IMG_1325-768x1024.jpg">
-				<area shape="rect" coords="290,172,333,250" alt="Phone" href="https://hackaday.com/wp-content/uploads/2020/06/SC30_5.jpg">
-				<area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.cancercenter.com/-/media/ctca/images/others/blogs/2019/01-january/01-blog-coffee-l.jpg?h=630&la=en&w=1200&hash=E16A64B856C92033D6D8F3FBDBC4C94B">
+				<area shape="rect" coords="34,44,270,350" alt="Computer"
+					href="https://denvermacrepair.com/wp-content/uploads/2017/03/IMG_1325-768x1024.jpg">
+				<area shape="rect" coords="290,172,333,250" alt="Phone"
+					href="https://hackaday.com/wp-content/uploads/2020/06/SC30_5.jpg">
+				<area shape="circle" coords="337,300,44" alt="Coffee"
+					href="https://www.cancercenter.com/-/media/ctca/images/others/blogs/2019/01-january/01-blog-coffee-l.jpg?h=630&la=en&w=1200&hash=E16A64B856C92033D6D8F3FBDBC4C94B">
 			</map>
 		</div>
 		<hr>
-		
-		
-		
+
+
+
 		<div style="text-align:center;">
-		<!-- This is a Linked-Button; but its not good use to have it,
+			<!-- This is a Linked-Button; but its not good use to have it,
 		so we use form instead
 		<a href='file:///C:/Users/Drago/Desktop/my%20HTML%20work/CSS_Page.html' target="_blank"><button>CSS</button></a>
 		-->
-		<form style="display: inline" action="CSS_Page.html" method="get" target="_blank">
-		<button id="p04" title="open in new window">CSS</button></form>
+			<form style="display: inline" action="CSS_Page.html" method="get" target="_blank">
+				<button id="p04" title="open in new window">CSS</button>
+			</form>
 		</div>
 		<!-- target="_blank" to open new tap/window -->
-		
-		<iframe src="http://www.draplin.com/pics/030209_open_here.jpg" name="iframe_a" height="400"  style="border:none;" width="800" title="Iframe_Example"></iframe>
 
-		<p><a href="CSS_Page.html"
-		target="iframe_a" >CLICK HERE to use the above IFrame to Open CSS Page.</a></p>
-<!-- When the target attribute of a link matches the name of an iframe, the link will open in the iframe. -->
+		<iframe src="http://www.draplin.com/pics/030209_open_here.jpg" name="iframe_a" height="400" style="border:none;"
+			width="800" title="Iframe_Example"></iframe>
+
+		<p><a href="CSS_Page.html" target="iframe_a">CLICK HERE to use the above IFrame to Open CSS Page.</a></p>
+		<!-- When the target attribute of a link matches the name of an iframe, the link will open in the iframe. -->
 		<hr>
-		
-		
-		
-		
+
+
+
+
 		<footer>
 			<address>
-				Written by Ramzi sayegh.<br> 
+				Written by Ramzi sayegh.<br>
 				<a href="mailto:Sayegh.ramzi@yahoo.com"> Sayegh.ramzi@yahoo.com</a><br>
 				079149091<br>
 				Visit us at:<br>
@@ -182,7 +218,8 @@
 				JO
 			</address>
 		</footer>
-		
-		
+
+
 	</body>
+		
 </html>
